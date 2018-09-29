@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>pessoa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-searchbar></ion-searchbar>
+  <ion-card *ngFor="let pessoa of data" (click)="showPessoaDetail(pessoa)">
+    <ion-card-header>
+      <ion-card-title>{{pessoa.nome}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+</ion-content>

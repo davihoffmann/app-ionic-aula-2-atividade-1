@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>pessoa-detalhe</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <form>
+      <ion-item>
+          <ion-input required type="text" name="nome" [(ngModel)]="pessoa.nome" placeholder="Nome"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input required type="text" name="curriculo" [(ngModel)]="pessoa.curriculo" placeholder="Curriculo"></ion-input>
+        </ion-item>
+
+        <ion-button  [disabled]="pessoa.nome === '' && pessoa.curriculo === ''">Salvar</ion-button>
+  </form>
+</ion-content>
